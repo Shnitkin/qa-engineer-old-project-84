@@ -7,10 +7,10 @@
   test-data: |
     В списке производителей выбрать "Apple"
   steps:
-    - Checkbox "Apple"
-    
+    - Checkbox "Apple" 
   expected-result: |
    Отобразится список товаров только компании "Apple"
+   
 - summary: |
      Оформление заказа с переходом на страницу оплаты.
   requirement: |
