@@ -1,6 +1,7 @@
+---
 - summary: |
     Проверка пользовательского интерфейса.
-  status: pass
+status: pass
 - summary: |
     Оформление заказа с переходом на страницу оплаты.
-  status: fail
+status: fail
