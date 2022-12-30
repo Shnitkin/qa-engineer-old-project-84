@@ -1,7 +1,7 @@
 ---
 - summary: |
     Не работает переход на страницу оплаты.
-  environment: |
+environment: |
     Google Chrome	108.0.5359.125 (Официальная сборка), (64 бит)
     ОС Linux 22.04
 steps-to-reproduce: |
