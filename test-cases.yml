@@ -1,29 +1,30 @@
+---
 - summary: |
     Проверка пользовательского интерфейса
-  requirement: |
+requirement: |
     При выборе любого производителя, сработет фильтр, который будет отображать только выбранный брэнд.
-  prerequisites: |
+prerequisites: |
    открыта страница https://hexlet-products-store.vercel.app/
-  test-data: |
+test-data: |
     В списке производителей выбрать "Apple"
-  steps:
+steps:
     - Checkbox "Apple" 
-  expected-result: |
+expected-result: |
    Отобразится список товаров только компании "Apple"
    
 - summary: |
      Оформление заказа с переходом на страницу оплаты.
-  requirement: |
+requirement: |
     При нажатии кнопки "Оформить заказ", клиент переходит на страницу оплаты
-  prerequisites:
+prerequisites:
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: |
+test-data: |
     Выбрать товар "iPhone 9"
-  steps:
+steps:
     - Нажать "В корзину"
     - Перейти в корзину
     - Нажимаем кнопку "Оформить заказ"
-  expected-result: |
+expected-result: |
     появляется модуль "Заказ успешно формлен"
     не отображается кнопка "оплатить"
     пользователь не переходит на страницу оплаты
