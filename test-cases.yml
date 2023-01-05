@@ -10,58 +10,52 @@
 requirement: |
     При выборе любого производителя, сработет фильтр, который будет искать товары по ключевому слову.
 prerequisites: |
-   открыта страница https://hexlet-products-store.vercel.app/
-   Checkbox — In Stock
+    открыта страница https://hexlet-products-store.vercel.app/
+    Checkbox — In Stock
 test-data: |"Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
-"Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
-"Hemani Tea", "Dermive", "ROREC White Rice", "Fair & ClearSaaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
-"Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" Golden"
+    "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
+    "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
+    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
 steps: |  В поиске ввести поочереди все перечисленные в веб приложении брэнды
 expected-result: |
-   Отобразится "Nothing found!"
-  L'Oreal Paris
-  Hemani Tea
-  Dermive
-  ROREC White Rice
-  Fair & Clear
-  Saaf & Khaas
-  Bake Parlor Big
-  Baking Food Items
-  fauji
-  Dry Rose
-  Boho Decor
-  LED Lights
-  luxury palace
-  Golden
+    Должен отобразится список товаров компаний:
+    Samsung, OPPO, Huawei, Microsoft Surface, Infinix, HP Pavilion, Royal_Mirage, Fog Scent Xpressio, Flying Wooden.
    
+    Не отобразился список товаров компаний:
+    Apple APPle, Impression of Acqua Di Gio, Royal_Mirage, Al Munakh, Lord - Al-Rehab, L'Oreal Paris, Hemani Tea,
+    Dermive, ROREC White Rice, Fair & Clear, Saaf & Khaas, Bake Parlor Big, Baking Food Items, fauji, Dry Rose, Boho Decor, 
+    LED Lights, luxury palace,  Golden.
    
 - summary: |
     Проверка пользовательского интерфейса
 requirement: |
-    При выборе любого производителя, сработет фильтр, который будет отображать только выбранного производителя.
+    При выборе любого производителя, сработет фильтр, который будет искать товары по производителю.
 prerequisites: |
-   открыта страница https://hexlet-products-store.vercel.app/
+    открыта страница https://hexlet-products-store.vercel.app/
+    Checkbox — In Stock
 test-data: |
-    В списке производителей найти "Apple"
-steps:
-  Checkbox — "Apple"
+    "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
+    "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
+    "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
+    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
 expected-result: |
-   Должен отобразится список товаров только компании "Apple"
-
+    Должен отобразится весь список товаров компаний
+    "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
+    "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
+    "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
+    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
    
 - summary: |
-     Оформление заказа с переходом на страницу оплаты.
+    Проверка пользовательского интерфейса
 requirement: |
-    При нажатии кнопки "Оформить заказ", клиент переходит на страницу оплаты
+    При выборе параметров сработет фильтр, который будет искать товары по цене, цвету, размеру.
 prerequisites:
     Открыта страница https://hexlet-products-store.vercel.app/
+    Checkbox — In Stock
 test-data: |
-    Выбрать товар "iPhone 9"
+    Цена "от 0 до 20000"
 steps:
-    - Нажать "В корзину"
-    - Перейти в корзину
-    - Нажимаем кнопку "Оформить заказ"
+    - Вести "от" = 0, "до" = 20000
 expected-result: |
-    появляется модуль "Заказ успешно формлен"
-    не отображается кнопка "оплатить"
-    пользователь не переходит на страницу оплаты
+    Отображается список товаров стоимостью от 0 до 20000 у.е.
+    Отсутствует фильтр поиска по цвету и размеру.
