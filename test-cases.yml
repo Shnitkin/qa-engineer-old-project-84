@@ -55,7 +55,26 @@ prerequisites:
 test-data: |
     Цена "от 0 до 20000"
 steps:
-    - Вести "от" = 0, "до" = 20000
+    - Вести в поле "ЦЕНА"  "от" = 0, "до" = 20000
 expected-result: |
     Отображается список товаров стоимостью от 0 до 20000 у.е.
     Отсутствует фильтр поиска по цвету и размеру.
+
+
+- summary: |
+    Проверка пользовательского интерфейса
+requirement: |
+    Пользователь должен иметь возможность просматривать товары и просматривать подробную информацию о товаре
+prerequisites:
+    Открыта страница https://hexlet-products-store.vercel.app/
+    Checkbox — In Stock
+test-data: |
+    - https://hexlet-products-store.vercel.app/products/1
+    - https://hexlet-products-store.vercel.app/products/2
+    - https://hexlet-products-store.vercel.app/products/3
+steps:
+    - выбрать из списка товаров iPhone 9, iPhone X, Samsung Universe 9
+    - кликнуть на фотографии расположенные ниже основного фото товара
+expected-result: |
+    -Отображается рейтинг, цена, скидка, основное фото.
+    -Нет возможности раскрыть дополнительные фотографии товара.
