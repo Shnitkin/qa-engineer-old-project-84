@@ -43,7 +43,7 @@ expected-result: |
     Проверка поиска товаров по цене, цвету, размеру
 requirement: |
     При выборе параметров сработет фильтр, который будет искать товары по цене, цвету, размеру.
-prerequisites:
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
     Checkbox — In Stock
 test-data: |
@@ -59,7 +59,7 @@ expected-result: |
     Проверка возможности просматривать товары и подробную информацию о товаре
 requirement: |
     Пользователь должен увидеть фото, описание товара.
-prerequisites:
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
     Checkbox — In Stock
 test-data: |
@@ -79,7 +79,7 @@ expected-result: |
     Проверка добавление товара в корзину
 requirement: |
     Пользователь должен иметь возможность добавлять товары в корзину (удалять) и просматривать содержимое корзины.
-prerequisites:
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/    
 test-data: |
     - https://hexlet-products-store.vercel.app/products/1
@@ -99,7 +99,7 @@ expected-result: |
      Оформление заказа с переходом на страницу оплаты.
 requirement: |
     При нажатии кнопки "Оформить заказ", клиент переходит на страницу оплаты
-prerequisites:
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
 test-data: |
     Выбрать товар "iPhone 9"
@@ -116,10 +116,11 @@ expected-result: |
     Проверка смены языков
 requirement: |
     Пользователь должен иметь возможность выбора языка
-prerequisites:
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
     По умолчанию английский язык
-test-data: |  English or Russian
+test-data: | 
+    English or Russian
 steps:
     - Нажать в шапке меню Accordeon "Language"
     - Выбрать "Russian"     
@@ -128,3 +129,18 @@ expected-result: |
  Все активные кнопки перевелись на русский язык
  Описание товара не перевелось на русский язык
  
+
+- summary: |
+   Сайт должен иметь мобильную версию
+requirement: |
+   Пользователь должен ииспользовать мобильную версию
+prerequisites: |
+    смартфон Samsung A52, версия Android 13, Chrome 108.0.5359.128     
+test-data: | 
+    Открытm страница https://hexlet-products-store.vercel.app/
+steps:
+- повернуть экран горизотально / вертикально
+- выбрать из списка товаров iPhone 9 и добавить в корзину
+- перейти в корзину
+expected-result: 
+Мобильное приложение работает, но некоторые элементы отбражаются некоректно
