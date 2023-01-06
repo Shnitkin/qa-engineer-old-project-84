@@ -19,7 +19,6 @@ status: fail
     Проверка добавление товара в корзину
 status: pass
 
-
 - summary: |
      Оформление заказа с переходом на страницу оплаты.
 status: fail
@@ -30,4 +29,12 @@ status: fail
 
 - summary: |
    Сайт должен иметь мобильную версию
+status: pass
+
+- summary: |
+   Проверка работоспособности на разных браузерах
+status: pass
+
+- summary: |
+   Проверка трафика 
 status: pass
