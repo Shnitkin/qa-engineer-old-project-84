@@ -27,3 +27,7 @@ status: fail
 - summary: |
     Проверка смены языков
 status: fail
+
+- summary: |
+   Сайт должен иметь мобильную версию
+status: pass
