@@ -13,9 +13,7 @@ test-data: |"Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", 
 steps: |  В поиске ввести поочереди все перечисленные в веб приложении брэнды
 expected-result: |
     Должен отобразится список товаров компаний:
-    Samsung, OPPO, Huawei, Microsoft Surface, Infinix, HP Pavilion, Royal_Mirage, Fog Scent Xpressio, Flying Wooden.
-   
-    Не отобразился список товаров компаний:
+    Samsung, OPPO, Huawei, Microsoft Surface, Infinix, HP Pavilion, Royal_Mirage, Fog Scent Xpressio, Flying Wooden,
     Apple APPle, Impression of Acqua Di Gio, Royal_Mirage, Al Munakh, Lord - Al-Rehab, L'Oreal Paris, Hemani Tea,
     Dermive, ROREC White Rice, Fair & Clear, Saaf & Khaas, Bake Parlor Big, Baking Food Items, fauji, Dry Rose, Boho Decor, 
     LED Lights, luxury palace,  Golden.
@@ -51,9 +49,8 @@ test-data: |
 steps:
     - Вести в поле "ЦЕНА"  "от" = 0, "до" = 20000
 expected-result: |
-    Отображается список товаров стоимостью от 0 до 20000 у.е.
-    Отсутствует фильтр поиска по цвету и размеру.
-
+   Должен отобразится список товаров стоимостью от 0 до 20000 у.е.
+   
 
 - summary: |
     Проверка возможности просматривать товары и подробную информацию о товаре
@@ -70,9 +67,7 @@ steps:
     - выбрать из списка товаров iPhone 9, iPhone X, Samsung Universe 9
     - кликнуть на фотографии расположенные ниже основного фото товара
 expected-result: |
-    - Отображается рейтинг, цена, скидка, основное фото.
-    - Не отображается описание товара (характеристики)
-    - Не раскрываются дополнительные фотографии товара.
+    - Должен отобразится; описание товара, рейтинг, цена, скидка, основное и дополнительное фото.
    
    
 - summary: |
@@ -91,8 +86,7 @@ steps:
     - нажать кнопку "Удалить" или "Отчистить корзину"
     
 expected-result: |
-    Пользователь  добавляет товары в корзину (удаляет) и просматривает содержимое корзины.
-
+   Должен отобразится и удалён список добавленных товаров. 
 
 
 - summary: |
@@ -108,10 +102,9 @@ steps:
     - Перейти в корзину
     - Нажимаем кнопку "Оформить заказ"
 expected-result: |
-    появляется модуль "Заказ успешно формлен"
-    не отображается кнопка "оплатить"
-    пользователь НЕ переходит на страницу оплаты
-    
+    Должен отобразится модуль "Заказ успешно формлен"
+
+
 - summary: |
     Проверка смены языков
 requirement: |
@@ -125,9 +118,8 @@ steps:
     - Нажать в шапке меню Accordeon "Language"
     - Выбрать "Russian"     
 expected-result: |
- Пользователь имеет возможность выбора языка
- Все активные кнопки перевелись на русский язык
- Описание товара не перевелось на русский язык
+ Должен отобразится выбора языка English or Russian
+
  
 
 - summary: |
@@ -135,12 +127,12 @@ expected-result: |
 requirement: |
    Пользователь должен ииспользовать мобильную версию
 prerequisites: |
-    смартфон Samsung A52, версия Android 13, Chrome 108.0.5359.128     
+   смартфон Samsung A52, версия Android 13, Chrome 108.0.5359.128     
 test-data: | 
-    Открытm страница https://hexlet-products-store.vercel.app/
+   Открытm страница https://hexlet-products-store.vercel.app/
 steps:
-- повернуть экран горизотально / вертикально
-- выбрать из списка товаров iPhone 9 и добавить в корзину
-- перейти в корзину
+   - повернуть экран горизотально / вертикально
+   - выбрать из списка товаров iPhone 9 и добавить в корзину
+   - перейти в корзину
 expected-result: 
-Мобильное приложение работает, но некоторые элементы отбражаются некоректно
+   Мобильное приложение работает.
