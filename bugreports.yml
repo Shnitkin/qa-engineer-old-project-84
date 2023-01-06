@@ -1,140 +1,89 @@
 ---
 - summary: |
     Проверка поиска товаров по ключевому слову
-requirement: |
-    При выборе любого производителя, сработет фильтр, который будет искать товары по ключевому слову.
-prerequisites: |
-    открыта страница https://hexlet-products-store.vercel.app/
-    Checkbox — In Stock
-test-data: |"Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
-    "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
-    "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
-    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
-steps: |  В поиске ввести поочереди все перечисленные в веб приложении брэнды
+environment: |
+    Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
+    Windows 10
+steps-to-reproduce: |
+     1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
+     2. В поиске ввести поочереди все перечисленные в веб приложении брэнды
+        "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
+        "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
+        "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
+        "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
 expected-result: |
-    Должен отобразится список товаров компаний:
-    Samsung, OPPO, Huawei, Microsoft Surface, Infinix, HP Pavilion, Royal_Mirage, Fog Scent Xpressio, Flying Wooden.
-   
-    Не отобразился список товаров компаний:
+    На странице должны отображаться товары интернет магазина
+actual-result: |
+    Не все товары отбражаются 
+    Список неотображаемых товаров:
     Apple APPle, Impression of Acqua Di Gio, Royal_Mirage, Al Munakh, Lord - Al-Rehab, L'Oreal Paris, Hemani Tea,
     Dermive, ROREC White Rice, Fair & Clear, Saaf & Khaas, Bake Parlor Big, Baking Food Items, fauji, Dry Rose, Boho Decor, 
-    LED Lights, luxury palace,  Golden.
-   
-- summary: |
-    Проверка поиска товаров по производителю.
-requirement: |
-    При выборе любого производителя, сработет фильтр, который будет искать товары по производителю.
-prerequisites: |
-    открыта страница https://hexlet-products-store.vercel.app/
-    Checkbox — In Stock
-test-data: |
-    "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
-    "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
-    "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
-    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
-expected-result: |
-    Должен отобразится весь список товаров компаний
-    "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
-    "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
-    "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
-    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
-   
+    LED Lights, luxury palace,  Golden.    
+    
+
 - summary: |
     Проверка поиска товаров по цене, цвету, размеру
-requirement: |
-    При выборе параметров сработет фильтр, который будет искать товары по цене, цвету, размеру.
-prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
-    Checkbox — In Stock
-test-data: |
-    Цена "от 0 до 20000"
-steps:
-    - Вести в поле "ЦЕНА"  "от" = 0, "до" = 20000
+environment: |
+    Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
+    Windows 10
+steps-to-reproduce: |
+    Зайти на страницу логина https://hexlet-products-store.vercel.app
 expected-result: |
-    Отображается список товаров стоимостью от 0 до 20000 у.е.
-    Отсутствует фильтр поиска по цвету и размеру.
+    На странице должен отображаться поиск товаров по цене, цвету и размеру.
+actual-result: |
+    Отображается только поиск по цене
+    Поиск по Цвету и Размеру на странице отсутсвует.
+    
+   
+   
 - summary: |
     Проверка возможности просматривать товары и подробную информацию о товаре
-requirement: |
-    Пользователь должен увидеть фото, описание товара.
-prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
-    Checkbox — In Stock
-test-data: |
-    - https://hexlet-products-store.vercel.app/products/1
-    - https://hexlet-products-store.vercel.app/products/2
-    - https://hexlet-products-store.vercel.app/products/3
-steps:
-    - выбрать из списка товаров iPhone 9, iPhone X, Samsung Universe 9
+environment: |
+    Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
+    Windows 10
+steps-to-reproduce: |
+    Зайти на страницу логина https://hexlet-products-store.vercel.app
+    Выбрать любые три товара, например  "iPhone 9", "iPhone X", "Samsung Universe 9"
     - кликнуть на фотографии расположенные ниже основного фото товара
 expected-result: |
-    - Отображается рейтинг, цена, скидка, основное фото.
+    Пользователь должен увидеть увеличенное фото и описание товара.
+actual-result: |
     - Не отображается описание товара (характеристики)
     - Не раскрываются дополнительные фотографии товара.
-   
-   
-- summary: |
-    Проверка добавление товара в корзину
-requirement: |
-    Пользователь должен иметь возможность добавлять товары в корзину (удалять) и просматривать содержимое корзины.
-prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/    
-test-data: |
-    - https://hexlet-products-store.vercel.app/products/1
-steps:
-    - выбрать из списка товаров iPhone 9, 
-    - нажать кнопку "В корзину"
-    - в шапке меню нажать кнопку "Корзина"
-    - открылось меню Корзины 
-    - нажать кнопку "Удалить" или "Отчистить корзину"
     
-expected-result: |
-    Пользователь  добавляет товары в корзину (удаляет) и просматривает содержимое корзины.
+
 - summary: |
-     Оформление заказа с переходом на страницу оплаты.
-requirement: |
-    При нажатии кнопки "Оформить заказ", клиент переходит на страницу оплаты
-prerequisites: |
-    Открыта страница https://hexlet-products-store.vercel.app/
-test-data: |
-    Выбрать товар "iPhone 9"
-steps:
-    - Нажать "В корзину"
-    - Перейти в корзину
-    - Нажимаем кнопку "Оформить заказ"
+    Не работает переход на страницу оплаты.
+environment: |
+    Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
+    Windows 10
+steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Выбрать товар "iPhone 9"
 expected-result: |
-    появляется модуль "Заказ успешно формлен"
-    не отображается кнопка "оплатить"
-    пользователь НЕ переходит на страницу оплаты
+       Нажать кнопку "В корзину" 
+       Перейти в корзину
+       Нажимаем кнопку "Оформить заказ"
+actual-result: |
+    1. Появляется модуль "Заказ успешно формлен"
+    2. Не отображается кнопка "оплатить"
+    3. Пользователь не переходит на страницу оплаты (ничего не происходит)
+	
     
 - summary: |
     Проверка смены языков
-requirement: |
-    Пользователь должен иметь возможность выбора языка
-prerequisites: |
+environment: |
+    Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
+    Windows 10
+steps-to-reproduce: |
     Открыта страница https://hexlet-products-store.vercel.app/
     По умолчанию английский язык
-test-data: | 
-    English or Russian
-steps:
     - Нажать в шапке меню Accordeon "Language"
-    - Выбрать "Russian"     
+    - Выбрать "Russian"   
 expected-result: |
- Пользователь имеет возможность выбора языка
- Все активные кнопки перевелись на русский язык
- Описание товара не перевелось на русский язык
- 
-- summary: |
-   Сайт должен иметь мобильную версию
-requirement: |
-   Пользователь должен ииспользовать мобильную версию
-prerequisites: |
-    смартфон Samsung A52, версия Android 13, Chrome 108.0.5359.128     
-test-data: | 
-    Открытm страница https://hexlet-products-store.vercel.app/
-steps:
-- повернуть экран горизотально / вертикально
-- выбрать из списка товаров iPhone 9 и добавить в корзину
-- перейти в корзину
-expected-result: 
-Мобильное приложение работает, но некоторые элементы отбражаются некоректно
+    Пользователь должен увидеть перевод всех наиболее важных кнопок на руския язык а также описание товара (если оно имеется)
+actual-result: |
+   1. Пользователь имеет возможность выбора языка
+   2. Все активные кнопки перевелись на русский язык
+   3. Описание товара не перевелось на русский язык    
+    
