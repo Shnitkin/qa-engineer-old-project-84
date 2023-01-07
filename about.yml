@@ -3,7 +3,7 @@ name: Denis Shnitkin
 job: QA Engineer
 level: junior
 email: shnitkin@mail.ru
-description: Люблю лето!
+description: | Люблю лето!
 skills: 
    - функциональное тестирование
    - написание багрепортов
