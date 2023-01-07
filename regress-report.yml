@@ -3,7 +3,7 @@ test-cases:
   - summary: |
       Проверка поиска товаров по ключевому слову.
   status: fail
-
+  
   - summary: |
       Проверка поиска товаров по производителю.
   status: pass
@@ -44,8 +44,8 @@ bugreports:
   - summary: |
       Проверка поиска товаров по ключевому слову
     environment: |
-      Google Chrome Версия 108.0.5359.125 (64 бит),  Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), 
-      Opera Версия: 94.0.4606.54 (64-bit), Windows 10 (64)
+      Google Chrome Версия 108.0.5359.125 64 бит,  Microsoft Edge Версия 108.0.1462.76 64-бит, 
+      Opera Версия: 94.0.4606.54 (64-bit), Windows 10, 64 бит
     steps-to-reproduce: 
       - открыта страница https://hexlet-products-store.vercel.app/
       - Checkbox — In Stocs
