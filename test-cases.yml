@@ -10,7 +10,7 @@ test-data: |"Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", 
     "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
     "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
     "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
-steps: |  В поиске ввести поочереди все перечисленные в веб приложении брэнды
+steps: |  В поиске ввести частично выбранные брэнды
 expected-result: |
     Должен отобразится список товаров компаний:
     "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
@@ -25,7 +25,8 @@ requirement: |
 prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
     Checkbox — In Stock
-test-data: |
+test-data: | 
+     В поиске ввести частично выбранные брэнды
     "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
     "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
     "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
@@ -36,6 +37,7 @@ expected-result: |
     "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
     "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
     "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
+    
    
 - summary: |
     Проверка поиска товаров по цене, цвету, размеру
