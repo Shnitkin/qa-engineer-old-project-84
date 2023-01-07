@@ -7,18 +7,18 @@
   steps-to-reproduce: |
     1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
     2. В поиске ввести поочереди брэнды:
-    "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
+    ["Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
     "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
     "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
-     "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
+     "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"]
   expected-result: |
     На странице должны отображаться товары интернет магазина
   actual-result: >
     1. Не все товары отбражаются 
     2. Список неотображаемых товаров:
-    Apple APPle, Impression of Acqua Di Gio, Royal_Mirage, Al Munakh, Lord - Al-Rehab, L'Oreal Paris, Hemani Tea,
+    [Apple APPle, Impression of Acqua Di Gio, Royal_Mirage, Al Munakh, Lord - Al-Rehab, L'Oreal Paris, Hemani Tea,
     Dermive, ROREC White Rice, Fair & Clear, Saaf & Khaas, Bake Parlor Big, Baking Food Items, fauji, Dry Rose, Boho Decor, 
-    LED Lights, luxury palace,  Golden.    
+    LED Lights, luxury palace,  Golden.]  
     
 
 - summary: |
