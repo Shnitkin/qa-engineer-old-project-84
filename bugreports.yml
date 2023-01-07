@@ -36,8 +36,8 @@
     Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
     Windows 10
   steps-to-reproduce: 
-   - Зайти на страницу логина https://hexlet-products-store.vercel.app
-   - Выбрать любые три товара, например  iPhone 9, iPhone X, Samsung Universe 9
+   - открыть  https://hexlet-products-store.vercel.app
+   - Выбрать товары:  iPhone 9, iPhone X, Samsung Universe 9
    - Кликнуть на фотографии расположенные ниже основного фото товара
   expected-result: |
     Пользователь должен увидеть увеличенное фото и описание товара.
