@@ -55,13 +55,11 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: 
     - https://hexlet-products-store.vercel.app/products/1
-    - https://hexlet-products-store.vercel.app/products/2
-    - https://hexlet-products-store.vercel.app/products/3
   steps:
-    - выбрать из списка товаров iPhone 9, iPhone X, Samsung Universe 9
+    - выбрать из списка товаров iPhone 9
     - кликнуть на фотографии расположенные ниже основного фото товара
   expected-result: |
-    - Отобразится описание товара
+    - Отобразится фото и описание товара
    
   
 - summary: |
