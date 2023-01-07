@@ -1,53 +1,56 @@
 ---
-- summary:     Проверка поиска товаров по ключевому слову.
-status: fail
+test-cases:
+  - summary: |
+      Проверка поиска товаров по ключевому слову.
+    status: fail
 
-- summary:     Проверка поиска товаров по производителю.
-status: pass
+  - summary:  |
+  Проверка поиска товаров по производителю.
+    status: pass
 
-- summary: |
-    Проверка поиска товаров по цене
-status: pass
+  - summary: |
+      Проверка поиска товаров по цене
+    status: pass
 
-- summary: |
-    Проверка возможности просматривать товары и подробную информацию о товаре.
-status: fail
+  - summary: |
+      Проверка возможности просматривать товары и подробную информацию о товаре.
+  status: fail
 
-- summary: |
-    Проверка добавление товара в корзину
-status: pass
+  - summary: |
+      Проверка добавление товара в корзину
+  status: pass
 
-- summary: |
-     Оформление заказа с переходом на страницу оплаты.
-status: fail
+  - summary: |
+       Оформление заказа с переходом на страницу оплаты.
+  status: fail
 
-- summary: |
-    Проверка смены языков
-status: fail
+  - summary: |
+      Проверка смены языков
+  status: fail
 
-- summary: |
-   Сайт должен иметь мобильную версию
-status: pass
+  - summary: |
+     Сайт должен иметь мобильную версию
+  status: pass
 
-- summary: |
-   Проверка работоспособности на разных браузерах
-status: pass
+  - summary: |
+     Проверка работоспособности на разных браузерах
+  status: pass
 
-- summary: |
-   Проверка трафика 
-status: pass
+  - summary: |
+     Проверка трафика 
+  status: pass
 
 bugreports:
   - summary: |
       Проверка поиска товаров по ключевому слову
-environment: |
+    environment: >
       Google Chrome Версия 108.0.5359.125 (64 бит),  Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), 
       Opera Версия: 94.0.4606.54 (64-bit) Windows 10 (64)
-steps-to-reproduce: |
-      открыта страница https://hexlet-products-store.vercel.app/
-      Checkbox — In Stock
-      В строке поиск по товарам ввести "Dry Rose"
-expected-result: |
-      Результат должен отобразить категорию товаров бренда "Dry Rose"
-actual-result: |
-      Отобразились бренды "iPhone 9", "Samsung Universe 9", "3D Embellishment Art Lamp", "Dry Rose" и т.д.
+    steps-to-reproduce: 
+      - открыта страница https://hexlet-products-store.vercel.app/
+      - Checkbox — In Stock
+      - В строке поиск по товарам ввести "Dry Rose"
+    expected-result: |
+        Результат должен отобразить категорию товаров бренда "Dry Rose"
+    actual-result: |
+        Отобразились бренды "iPhone 9", "Samsung Universe 9", "3D Embellishment Art Lamp", "Dry Rose" и т.д.
