@@ -6,11 +6,11 @@
     Windows 10
   steps-to-reproduce: |
     1. Зайти на страницу логина https://hexlet-products-store.vercel.app/
-    2. В поиске ввести поочереди брэнды: Apple, Samsung, OPPO, Huawei, APPle, Microsoft Surface, Infinix, HP Pavilion, Impression of Acqua Di Gio, Royal_Mirage
+    2. В поиске ввести по очереди брэнды: Apple, Samsung, OPPO, Huawei, APPle, Microsoft Surface, Infinix, HP Pavilion, Impression of Acqua Di Gio, Royal_Mirage
   expected-result: |
     На странице должны отображаться товары интернет магазина
   actual-result: >
-    1. Не все товары отбражаются 
+    1. Не все товары отображаются 
     2. Список неотображаемых товаров: Apple APPle, Impression of Acqua Di Gio, Royal_Mirage, Al Munakh, Lord - Al-Rehab, L'Oreal Paris, Hemani Tea,
     Dermive, ROREC White Rice, Fair & Clear, Saaf & Khaas, Bake Parlor Big, Baking Food Items, fauji, Dry Rose, Boho Decor, 
     LED Lights, luxury palace,  Golden
@@ -42,7 +42,7 @@
   expected-result: |
     Пользователь должен увидеть увеличенное фото и описание товара.
   actual-result: 
-    - Не отображается описание товараи и его характеристики
+    - Не отображается описание товара и его характеристики
     - Не раскрываются дополнительные фотографии товара.
    
 
@@ -75,7 +75,7 @@
     3. Нажать в меню Accordeon "Language"
     4. Выбрать "Russian"   
   expected-result: |
-    Пользователь должен увидеть перевод всех наиболее важных кнопок на руския язык а также описание товара (если оно имеется)
+    Пользователь должен увидеть перевод всех наиболее важных кнопок на руский язык а также описание товара (если оно имеется)
   actual-result: >
      1. Пользователь имеет возможность выбора языка
      2. Все активные кнопки перевелись на русский язык
