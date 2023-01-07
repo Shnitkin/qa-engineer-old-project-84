@@ -25,21 +25,21 @@
   requirement: |
     При выборе любого производителя, сработет фильтр, который будет искать товары по производителю.
   prerequisites: |
-    открыта страница https://hexlet-products-store.vercel.app/
-  test-data: > 
+    Открыта страница https://hexlet-products-store.vercel.app/
+  test-data: |
      В поиске ввести частично выбранные брэнды
-    "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
+    ["Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
     "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
     "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
-    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
+    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"]
   steps: 
     - В поиске ввести выбранные брэнды
-  expected-result: >
+  expected-result: |
     Должен отобразится весь список товаров компаний
-    "Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
+    ["Apple", "Samsung", "OPPO", "Huawei", "APPle", "Microsoft Surface", "Infinix", "HP Pavilion", 
     "Impression of Acqua Di Gio", "Royal_Mirage", "Fog Scent Xpressio", "Al Munakh", "Lord - Al-Rehab", "L'Oreal Paris",
     "Hemani Tea", "Dermive", "ROREC White Rice", "Fair & Clear", "Saaf & Khaas", "Bake Parlor Big", "Baking Food Items", "fauji",
-    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"
+    "Dry Rose", "Boho Decor", "Flying Wooden", "LED Lights", "luxury palace" "Golden"]
     
 
 - summary: |
