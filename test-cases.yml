@@ -34,7 +34,7 @@
   prerequisites: |
     Открыть страницу # https://hexlet-products-store.vercel.app/
   test-data: 
-    ввести # от 1 до 20, от 20 до 120, от 120 до 1000
+    ввести # от 1 до 20, от 20 до 120, от 120 до 1000.
   steps:
     - Ввести в поле от 0 до 20,
     - Ввести в поле от 20 до 120,
@@ -51,7 +51,7 @@
   prerequisites: |
     Открыть страницу # https://hexlet-products-store.vercel.app/
   test-data: 
-    ввести  # от -100 до -220, от -20 до -170, от -620 до -1000
+    ввести  # от -100 до -220, от -20 до -170, от -620 до -1000.
   steps:
     - Ввести в поле поиск по цене  от -100 до -220,
     - Ввести в поле от -20 до -170,
@@ -119,7 +119,7 @@
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: 
-    - https://hexlet-products-store.vercel.app/products/1
+    - # https://hexlet-products-store.vercel.app/products/1
   steps:
     - выбрать из списка товаров iPhone 9
     - кликнуть на фотографии расположенные ниже основного фото товара
@@ -134,7 +134,7 @@
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/    
   test-data: |
-    - https://hexlet-products-store.vercel.app/products/1
+    - # https://hexlet-products-store.vercel.app/products/1
   steps:
     - выбрать из списка товаров "iPhone 9", 
     - нажать кнопку "В корзину"
