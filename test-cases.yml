@@ -190,13 +190,13 @@
  - summary: |
     Навигация по страницам каталога
   requirement: |
-    Сайт должен быть способен обрабатывать большое количество трафика
+    В каталоге сайта должны быть переходы на следущие или предыдущие страницы
   prerequisites: |
-    apache-jmeter-5.5
+    Открыта страница https://hexlet-products-store.vercel.app/ # По умолчанию английский язык
   test-data: | 
-    https://hexlet-products-store.vercel.app/
+    "Previous" "Next"
   steps:
-   - Ввести http://hexlet-products-store.vercel.app/ в "http request" (ссылка screen2) 
-   - найти результат в "View results in Table"  (ссылка screen3) 
+   - Нажать кнопку "Next" 3 раза
+   - Нажать кнопку "Previous" 3 раза
   expected-result: |
-   Сайт обрабатывает большое количество трафика
+   Сайт должен переходить на следующие и предыдущие страницы.
