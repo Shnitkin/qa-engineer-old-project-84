@@ -9,7 +9,7 @@
 
 - summary: |
     Проверка поиска товаров по цене
-  status: fail
+  status: pass
   
 - summary: |
     Отрицательные значения в фильтре
