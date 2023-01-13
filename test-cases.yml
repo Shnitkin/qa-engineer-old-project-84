@@ -4,7 +4,7 @@
   requirement: |
     При выборе любого производителя, сработает фильтр, который будет искать товары по ключевому слову.
   prerequisites: |
-    открыта страница https://hexlet-products-store.vercel.app/
+    Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     В поиске ввести "смартфон", "ноутбук", "туалетная вода", "кроссовки".
   steps: 
