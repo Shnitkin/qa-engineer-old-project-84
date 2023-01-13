@@ -65,11 +65,11 @@
     Windows 10
   steps-to-reproduce: 
     1. В каталоге перейти в описание "iPhone 9"
-    2. Нажать ссылку #smartphones
+    2. Нажать ссылку # smartphones
     3. В каталоге перейти в описание "MacBook Pro"
-    4. Нажать ссылку #laptops
+    4. Нажать ссылку # laptops
     5. В каталоге перейти в описание "Eau De Perfume Spray"
-    6. Нажать ссылку #fragrances
+    6. Нажать ссылку # fragrances
   expected-result: |
     Отобразится список товаров, имеющий отошение к данной категории
   actual-result: 
