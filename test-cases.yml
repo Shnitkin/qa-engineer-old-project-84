@@ -6,11 +6,11 @@
   prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
-    Apple, Samsung, OPPO, Huawei, APPle, Microsoft Surface, Infinix, HP Pavilion, Impression of Acqua Di Gio, Royal_Mirage,
+    В поиске ввести "смартфон", "ноутбук", "туалетная вода", "кроссовки".
   steps: 
     - В поиске ввести выбранные брэнды
   expected-result: >
-    Должен отобразится список товаров : Apple, Samsung, OPPO, Huawei, APPle, Microsoft Surface, Infinix, HP Pavilion, Impression of Acqua Di Gio, Royal_Mirage,
+    Должен отобразится список товаров : "смартфон", "ноутбук", "туалетная вода", "кроссовки".
    
 
 - summary: |
@@ -63,7 +63,7 @@
 - summary: |
     Проверка добавление товара в корзину
   requirement: |
-    Пользователь должен иметь возможность добавлять товары в корзину, удалять и просматривать содержимое корзины.
+    Пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины.
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/    
   test-data: |
@@ -73,10 +73,24 @@
     - нажать кнопку "В корзину"
     - в шапке меню нажать кнопку "Корзина"
     - открылось меню Корзины 
+  expected-result: |
+   Должен отобразится список добавленных товаров. 
+
+
+- summary: |
+    Проверка удаление товара из корзины
+  requirement: |
+    Пользователь должен иметь возможность удалять товары из корзины
+  prerequisites: |
+    Открыта страница https://hexlet-products-store.vercel.app/    
+  test-data: |
+    в корзине должен быть любой товар.
+  steps:
+    - в шапке меню нажать кнопку "Корзина"
+    - открылось меню Корзины 
     - нажать кнопку "Удалить" или "Отчистить корзину"
   expected-result: |
-   Должен отобразится и удалён список добавленных товаров. 
-
+   Товар должен удалиться. 
 
 
 - summary: |
@@ -98,18 +112,21 @@
 - summary: |
     Проверка смены языков
   requirement: |
-    Пользователь должен иметь возможность выбора языка
+    Пользователь должен иметь возможность просматривать страницу на английском языке или русском
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/  # По умолчанию английский язык
   test-data: | 
     English or Russian
   steps:
     - Нажать в шапке меню Accordeon "Language"
-    - Выбрать "Russian"     
+    - Выбрать "Russian"
+    - Перейти на главную страницу и выбрать любой товар
+    - Перейти в корзину 
   expected-result: |
-      Должен отобразится выбора языка English or Russian
+      Текст описания товара, клавная страница и корзина должны быть переведены на русский язык.
 
  
+
 
 - summary: |
     Сайт должен иметь мобильную версию
@@ -156,6 +173,22 @@
 
 - summary: |
     Проверка трафика 
+  requirement: |
+    Сайт должен быть способен обрабатывать большое количество трафика
+  prerequisites: |
+    apache-jmeter-5.5
+  test-data: | 
+    https://hexlet-products-store.vercel.app/
+  steps:
+   - Ввести http://hexlet-products-store.vercel.app/ в "http request" (ссылка screen2) 
+   - найти результат в "View results in Table"  (ссылка screen3) 
+  expected-result: |
+   Сайт обрабатывает большое количество трафика
+   
+ 
+ 
+ - summary: |
+    Навигация по страницам каталога
   requirement: |
     Сайт должен быть способен обрабатывать большое количество трафика
   prerequisites: |
