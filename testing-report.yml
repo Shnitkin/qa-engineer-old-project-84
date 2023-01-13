@@ -5,11 +5,11 @@
 
 - summary: |
     Проверка поиска товаров по производителю.
-  status: pass
+  status: fail
 
 - summary: |
     Проверка поиска товаров по цене
-  status: pass
+  status: fail
   
 - summary: |
     Отрицательные значения в фильтре
@@ -40,8 +40,8 @@
   status: pass
 
 - summary: |
-     Оформление заказа с переходом на страницу оплаты.
-  status: fail
+     Оформление заказа.
+  status: pass
 
 - summary: |
     Проверка смены языков
