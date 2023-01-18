@@ -2,71 +2,71 @@
 test-cases:
   - summary: |
       Проверка поиска товаров по ключевому слову
-  status: fail
+    status: fail
   
   - summary: |
       Проверка поиска товаров по производителю
-  status: fail
+    status: fail
 
   - summary: |
       Проверка поиска товаров по цене
-  status: pass
+    status: pass
   
   - summary: |
       Отрицательные значения в фильтре
-  status: fail
+    status: fail
   
   - summary: |
       Фильтрация обычных цен
-  status: fail
+    status: fail
   
   - summary: |
       Фильтрация цен со скидкой
-  status: pass
+    status: pass
   
   - summary: |
       Хэштег перехода в категорию
-  status: pass
+    status: pass
 
   - summary: |
       Проверка возможности просматривать товары и подробную информацию о товаре
-  status: fail
+    status: fail
 
   - summary: |
       Проверка добавление товара в корзину
-  status: pass
+    status: pass
 
   - summary: |
-    Проверка удаление товара из корзины
-  status: pass
+      Проверка удаление товара из корзины
+    status: pass
 
   - summary: |
-    Оформление заказа.
-  status: pass
+      Оформление заказа.
+    status: pass
 
   - summary: |
-    Проверка смены языков
-  status: fail
+      Проверка смены языков
+    status: fail
 
   - summary: |
-    Сайт должен иметь мобильную версию
-  status: pass
+      Сайт должен иметь мобильную версию
+    status: pass
 
   - summary: |
-    Проверка работоспособности на разных браузерах
-  status: pass
+      Проверка работоспособности на разных браузерах
+    status: pass
 
   - summary: |
-    Проверка трафика 
-  status: pass
+      Проверка трафика 
+    status: pass
 
 bugreports:
   - summary: |
-      Проверка поиска товаров по ключевому слову
+      Не рабоает поиск товаров по ключевому слову.
     environment: >
       Google Chrome Версия 108.0.5359.125 64 бит,  Microsoft Edge Версия 108.0.1462.76 64-бит, 
       Opera Версия: 94.0.4606.54 (64-bit), Windows 10, 64 бит
-    steps-to-reproduce: 
+    steps-to-reproduce: |
       1. Открыта страница https://hexlet-products-store.vercel.app/
       2. Checkbox — In Stocs
       3. В строке поиск по товарам ввести Dry Rose
