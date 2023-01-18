@@ -50,7 +50,7 @@
     Проверка поиска товаров по цене при отрицательных значениях в фильтре
   prerequisites: |
     Открыть страницу # https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: |
     ввести  # от -100 до -220, от -20 до -170, от -620 до -1000.
   steps:
     - Ввести в поле поиск по цене  от -100 до -220,
@@ -66,7 +66,7 @@
     Проверка поиска товаров по обычной цене. # зачёркнутая без скидки
   prerequisites: |
     Открыть страницу # https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: |
     ввести # iPhone 9 - цена 549$, iPhone X - цена 899$, Samsung Universe 9 - цена 1249$
   steps:
     - Ввести в поле поиск по цене от 549 до 549
@@ -82,7 +82,7 @@
     Проверка поиска товаров по обычной цене. # со скидкой выделенна красным
   prerequisites: |
     Открыть страницу # https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: |
     ввести # iPhone 9 - цена 477.85$, iPhone X - цена 737.72$, Samsung Universe 9 - цена 1055.90$
   steps:
     - Ввести в поле поиск по цене от 477.85 до 549
@@ -98,7 +98,7 @@
     Проверка поиска товаров с переходом в категорию
   prerequisites: |
     Открыть страницу # https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: |
     ввести # iPhone 9, MacBook Pro,  Eau De Perfume Spray
   steps:
     - в каталоге перейти в описание "iPhone 9"
@@ -118,8 +118,8 @@
     Пользователь должен увидеть фото, описание товара.
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: 
-    - # https://hexlet-products-store.vercel.app/products/1
+  test-data: |
+    Ввести # https://hexlet-products-store.vercel.app/products/1
   steps:
     - выбрать из списка товаров iPhone 9
     - кликнуть на фотографии расположенные ниже основного фото товара
