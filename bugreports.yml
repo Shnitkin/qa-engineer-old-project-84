@@ -48,7 +48,7 @@
   environment: >
     Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
     Windows 10
-  steps-to-reproduce: 
+  steps-to-reproduce: |
     1. Ввести в поле поиск по цене от 549 до 549,
     2. Ввести в поле от 899 до 900,
     3. Ввести в поле от 1249 до 2000.
@@ -63,7 +63,7 @@
   environment: >
     Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
     Windows 10
-  steps-to-reproduce: 
+  steps-to-reproduce: |
     1. В каталоге перейти в описание "iPhone 9" и нажать ссылку # smartphones.
     2. В каталоге перейти в описание "MacBook Pro" и нажать ссылку # laptops.
     3. В каталоге перейти в описание "Eau De Perfume Spray" и нажать ссылку # fragrances.
@@ -79,7 +79,7 @@
   environment: >
     Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
     Windows 10
-  steps-to-reproduce: 
+  steps-to-reproduce: |
     1. Открыть  https://hexlet-products-store.vercel.app
     2. Выбрать товары:  iPhone 9, iPhone X, Samsung Universe 9
     3. Кликнуть на фотографии расположенные ниже основного фото товара
@@ -96,7 +96,7 @@
   environment: >
     Google Chrome Версия 108.0.5359.125 (64 бит), Microsoft Edge Версия 108.0.1462.76 (64-разрядная версия), Opera Версия: 94.0.4606.54 (64-bit)
     Windows 10
-  steps-to-reproduce: 
+  steps-to-reproduce: |
     1. Нажать в шапке меню Accordeon "Language"
     2. Выбрать "Russian"
     3. Перейти на главную страницу и выбрать любой товар
